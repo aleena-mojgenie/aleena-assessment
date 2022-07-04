@@ -27,7 +27,7 @@ Route::get('statement','StatementController@index')->middleware('auth');
 Route::get('insert','DepositController@insertForm')->middleware('auth');
 Route::post('create','DepositController@insert')->middleware('auth');
 
-Route::get('dd','TransferController@abc')->middleware('auth');
+//Route::get('dd','TransferController@abc')->middleware('auth');
 
 Route::get('insert-withdrawform','WithdrawController@insertForm')->middleware('auth');
 Route::post('create-withdrawform','WithdrawController@insert')->middleware('auth');
